@@ -1,0 +1,25 @@
+# Virtual environment
+venv/
+.venv/ # Include if you name your venv differently
+
+# Data files (generated/large)
+data/*.npy
+data/*.pkl
+data/*.csv # If you later use CSV for retraining
+data/*.zip # If you download raw data zips
+
+# Model files (can be large, will be versioned separately or stored in cloud storage)
+models/*.tf
+models/*.h5
+models/*.keras
+models/*.pkl
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# IDE specific files (e.g., VS Code)
+.vscode/
+
+# Operating System files
+.DS_Store # macOS
