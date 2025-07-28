@@ -1,10 +1,8 @@
-# src/preprocessing.py
-
 import os
 import numpy as np
 import tensorflow as tf
-from tensorflow.keras.datasets import cifar10
-from tensorflow.keras.utils import to_categorical
+from keras.datasets import cifar10
+from keras.utils import to_categorical
 from sklearn.model_selection import train_test_split # New import for splitting data
 import pickle
 
