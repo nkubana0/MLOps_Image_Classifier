@@ -1,0 +1,11 @@
+# .dockerignore
+.git/
+.gitignore
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/ # Jupyter checkpoints
+notebook/            # Don't need notebook itself in the docker image
+*.DS_Store
+Thumbs.db
