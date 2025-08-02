@@ -3,15 +3,16 @@ import requests
 import os
 import json
 import base64
-from PIL import Image # Ensure Image is imported from PIL for image handling
+from PIL import Image
 import io
 import pandas as pd
-import matplotlib.pyplot as plt # Import for potential future plotting, or if needed for Image display fallback
-import seaborn as sns # Import for potential future plotting
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # --- Configuration ---
-# Assuming FastAPI is running locally on port 8000
-API_BASE_URL = "http://localhost:8000"
+# Update this URL to your deployed Hugging Face Space URL
+# Replace 'YOUR_USERNAME-YOUR_SPACE_NAME.hf.space' with your actual Space URL
+API_BASE_URL = "https://nkubana-cifar10-mlops-demo.hf.space" # <--- IMPORTANT: UPDATE THIS LINE
 HEALTH_ENDPOINT = f"{API_BASE_URL}/health"
 PREDICT_ENDPOINT = f"{API_BASE_URL}/predict"
 RETRAIN_TRIGGER_ENDPOINT = f"{API_BASE_URL}/retrain/trigger"
