@@ -43,4 +43,4 @@ EXPOSE 8000
 # Define the command to run your application using Uvicorn.
 # IMPORTANT: Use $PORT here, not a hardcoded 8000.
 # Also, remove --reload for production deployment.
-CMD ["uvicorn", "src.api:app", "--host", "0.0.0.0", "--port", "$PORT"]
+CMD ["uvicorn", "src.api:app", "--host", "0.0.0.0", "--port", "10000"]
