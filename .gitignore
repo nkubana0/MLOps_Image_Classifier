@@ -1,69 +1,67 @@
-    # Byte-compiled / optimized / DLL files
-    __pycache__/
-    *.pyc
-    *.pyd
-    *.pyo
-    *.egg-info/
-    .eggs/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.eggs/
 
-    # Virtual environment
-    venv/
-    .venv/
-    env/
-    .env/
+# Virtual environment (CRITICAL to ignore this)
+venv/
+.venv/
+env/
+.env/
 
-    # IDE specific files
-    .idea/             # IntelliJ/PyCharm
-    *.iml              # IntelliJ/PyCharm
-    .vscode/           # VS Code (if you don't want to share configs)
-    .DS_Store          # macOS specific
-    Thumbs.db          # Windows specific
+# IDE specific files
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
 
-    # Jupyter Notebook files
-    .ipynb_checkpoints/
-    *.ipynb_checkpoints # (Optional) if you want to ignore all checkpoints recursively
+# Jupyter Notebook files
+.ipynb_checkpoints/
+*.ipynb_checkpoints
 
-    # Logs and databases
-    *.log
-    *.sqlite3
-    *.db
+# Logs and databases
+*.log
+*.sqlite3
+*.db
 
-    # Model artifacts (often large, managed by LFS or separate storage)
-    # models/  <-- REMOVE THIS LINE or COMMENT IT OUT
-    *.pkl
-    *.h5
-    *.tf
-    *.onnx
+# Model artifacts
+# models/ is now tracked by Git LFS, so it should NOT be in .gitignore.
+*.pkl
+*.tf
+*.onnx
 
-    # Data files (often large, managed by LFS or separate storage)
-    # data/    <-- REMOVE THIS LINE or COMMENT IT OUT
-    *.csv
-    *.tsv
-    *.json
-    *.parquet
-    *.npy
-    *.npz
-    *.wav
-    *.mp3
-    *.png
-    *.jpg
+# Data files
+# data/ is now tracked by Git LFS, so it should NOT be in .gitignore.
+*.csv
+*.tsv
+*.json
+*.parquet
+*.npy
+*.npz
+*.wav
+*.mp3
+*.png
+*.jpg
 
-    # Credentials and sensitive information
-    .env               # Environment variables for local development
-    *.env.local
-    *.pem
-    *.key
+# Credentials and sensitive information
+.env
+*.env.local
+*.pem
+*.key
 
-    # Build artifacts
-    dist/
-    build/
-    *.egg
+# Build artifacts
+dist/
+build/
+*.egg
 
-    # Coverage reports
-    .coverage
-    .coverage.*
-    htmlcov/
+# Coverage reports
+.coverage
+.coverage.*
+htmlcov/
 
-    # Render/Cloud deployment specific files (if they create local artifacts)
-    .render/
-    
+# Git LFS files
+.gitattributes
