@@ -20,7 +20,7 @@ st.set_page_config(
 )
 
 # --- Configuration ---
-API_BASE_URL = "https://cifar10-mlops-api.onrender.com"
+API_BASE_URL = "https://mlops-image-classifier.onrender.com"
 HEALTH_ENDPOINT = f"{API_BASE_URL}/health"
 PREDICT_ENDPOINT = f"{API_BASE_URL}/predict"
 RETRAIN_TRIGGER_ENDPOINT = f"{API_BASE_URL}/trigger_retrain"
