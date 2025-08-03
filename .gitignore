@@ -1,0 +1,68 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.eggs/
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# IDE specific files
+.idea/             # IntelliJ/PyCharm
+*.iml              # IntelliJ/PyCharm
+.vscode/           # VS Code (if you don't want to share configs)
+.DS_Store          # macOS specific
+Thumbs.db          # Windows specific
+
+# Jupyter Notebook files
+.ipynb_checkpoints/
+*.ipynb_checkpoints # (Optional) if you want to ignore all checkpoints recursively
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# Model artifacts (often large, managed by LFS or separate storage)
+models/            # If you store models directly in repo, but it's often better to ignore and manage via LFS or external storage
+*.pkl
+*.h5
+*.tf
+*.onnx
+
+# Data files (often large, managed by LFS or separate storage)
+data/              # If raw/processed data is very large. Consider what specific data files you might LFS-track vs. completely ignore.
+*.csv
+*.tsv
+*.json
+*.parquet
+*.npy
+*.npz
+*.wav
+*.mp3
+*.png
+*.jpg
+
+# Credentials and sensitive information
+.env               # Environment variables for local development
+*.env.local
+*.pem
+*.key
+
+# Build artifacts
+dist/
+build/
+*.egg
+
+# Coverage reports
+.coverage
+.coverage.*
+htmlcov/
+
+# Render/Cloud deployment specific files (if they create local artifacts)
+.render/

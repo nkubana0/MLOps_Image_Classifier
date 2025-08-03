@@ -1,0 +1,23 @@
+.git
+.gitignore
+.gitmodules
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+venv/
+.venv/
+env/
+.env/
+*.log
+*.db
+notebook/          # No need to copy notebooks into the Docker image if they're not part of the production runtime
+tests/             # No need for test files in production image
+docs/              # No need for documentation in production image
+data/test/         # If your production model only needs training data or a small inference dataset, exclude large test sets
+data/train/        # If retraining happens external to the image or on a mounted volume, avoid copying large training data
+
+# Exclude any other large files or directories not needed for the runtime environment
